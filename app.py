@@ -4,7 +4,6 @@ import time
 from PIL import Image
 
 def main():
-
     st.set_page_config(page_title="AgriVision AI", layout="wide")
         st.markdown("""
 <style>
