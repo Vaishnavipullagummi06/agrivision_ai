@@ -43,7 +43,23 @@ padding:8px 16px;
 h1,h2,h3,h4{
 color:white;
 }
+/* ALERT TEXT FIX */
 
+[data-testid="stAlert"]{
+color:#000000 !important;
+font-weight:600;
+}
+
+[data-testid="stAlert"] div{
+color:#000000 !important;
+}
+
+/* METRIC NUMBER */
+
+[data-testid="stMetricValue"]{
+color:#0a2e0a !important;
+font-weight:bold;
+}
 </style>
 """, unsafe_allow_html=True)
     st.title("🌱 AgriVision AI")
