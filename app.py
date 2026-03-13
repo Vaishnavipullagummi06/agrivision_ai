@@ -6,15 +6,43 @@ from PIL import Image
 def main():
 
     st.set_page_config(page_title="AgriVision AI", layout="wide")
-    st.markdown("""
+   st.markdown("""
 <style>
 
-.stApp {
-background-color: #e8f5e9;
+/* MAIN BACKGROUND */
+[data-testid="stAppViewContainer"]{
+background-color:#0f3d0f;
+color:white;
 }
 
-h1 {
-color: #1b5e20;
+/* HEADER */
+[data-testid="stHeader"]{
+background:transparent;
+}
+
+/* WHITE CARDS */
+div[data-testid="stMetric"],
+div[data-testid="stAlert"],
+div[data-testid="stVerticalBlock"] > div {
+background-color:white;
+color:#1b5e20;
+padding:15px;
+border-radius:12px;
+margin-bottom:10px;
+}
+
+/* BUTTON STYLE */
+.stButton > button {
+background-color:#4CAF50;
+color:white;
+border-radius:8px;
+border:none;
+padding:8px 16px;
+}
+
+/* HEADINGS */
+h1,h2,h3,h4{
+color:white;
 }
 
 </style>
@@ -24,7 +52,7 @@ color: #1b5e20;
 
     st.image(
         "https://images.unsplash.com/photo-1500382017468-9049fed747ef",
-        use_container_width=True
+        width=700
     )
 
     st.markdown("An AI-powered smart agriculture monitoring system")
