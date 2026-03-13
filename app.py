@@ -6,7 +6,7 @@ from PIL import Image
 def main():
 
     st.set_page_config(page_title="AgriVision AI", layout="wide")
-   st.markdown("""
+        st.markdown("""
 <style>
 
 /* MAIN BACKGROUND */
@@ -48,14 +48,14 @@ color:white;
 </style>
 """, unsafe_allow_html=True)
 
-    st.title("🌱 AgriVision AI")
+      st.title("🌱 AgriVision AI")
 
-    st.image(
+      st.image(
         "https://images.unsplash.com/photo-1500382017468-9049fed747ef",
         width=700
     )
 
-    st.markdown("An AI-powered smart agriculture monitoring system")
+      st.markdown("An AI-powered smart agriculture monitoring system")
 
     # -------------------------------
     # 1. Crop Health Detection
