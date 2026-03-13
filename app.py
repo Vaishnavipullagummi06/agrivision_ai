@@ -46,20 +46,18 @@ color:white;
 
 </style>
 """, unsafe_allow_html=True)
+    st.title("🌱 AgriVision AI")
 
-      st.title("🌱 AgriVision AI")
-
-      st.image(
+    st.image(
         "https://images.unsplash.com/photo-1500382017468-9049fed747ef",
         width=700
     )
 
-      st.markdown("An AI-powered smart agriculture monitoring system")
+    st.markdown("An AI-powered smart agriculture monitoring system")
 
     # -------------------------------
     # 1. Crop Health Detection
     # -------------------------------
-
     st.header("1. Crop Health Detection")
 
     uploaded_file = st.file_uploader("Upload a crop image")
